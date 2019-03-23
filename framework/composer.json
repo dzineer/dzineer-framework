@@ -1,0 +1,38 @@
+{
+    "name": "dzineer/framework",
+    "description": "The Dzineer Framework",
+    "keywords": ["framework", "dzineer"],
+    "license": "Closed",
+    "authors": [
+        {
+            "name": "Frank Decker",
+            "email": "frank@dzineer.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "ext-mbstring": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dengine\\": "src/Dengine/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dengine\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/dzineer/dzineer-framework"
+        },
+}
